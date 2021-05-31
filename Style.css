@@ -1,0 +1,61 @@
+#container{
+  border: 1.7px dashed blueviolet;
+  overflow-x: hidden;
+  width: 400px;
+  height: 300px;
+  margin-left: 30vw;
+  margin-top: 20vh;
+  border-radius: 5%;
+  padding: 10px;
+}
+#board{
+  border-radius: 5%;
+  display: grid;
+  grid-template-columns: repeat(3,400px);
+  grid-gap: 10px;
+  height: 300px;
+  width: auto;
+}
+
+.block{
+  border-radius: 5%;
+}
+
+#block0{
+  background-color: chartreuse;
+}
+
+#block1{
+  background-color: rgb(16, 50, 201);
+}
+
+#block2{
+  background-color: rgb(201, 189, 16);
+}
+
+
+
+
+#dotsContainer{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  /* Reset styles */
+  list-style-type: none;
+  padding-bottom: 20px;
+  padding-top: 40px;  
+   
+  margin-left: -15vw;
+}
+
+#dotsContainer button{
+  /* Rounded border */
+  border-radius: 9999px;
+  height: 12px;
+  width: 12px; 
+  border: 1px solid rgba(0, 0, 0, .3);
+
+  /* OPTIONAL: Spacing between dots */ 
+  margin: 0 4px;
+}
